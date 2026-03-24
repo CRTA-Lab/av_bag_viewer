@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'bag_viewer'
+package_name = 'av_bag_viewer'
 
 setup(
     name=package_name,
@@ -22,7 +22,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'bag_viewer = bag_viewer.bag_viewer:main',
+            'av_bag_viewer = av_bag_viewer.av_bag_viewer:main',
+            'depth_viewer = av_bag_viewer.depth_viewer:main',
         ],
     },
 )
