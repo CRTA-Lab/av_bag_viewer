@@ -124,13 +124,15 @@ source install/setup.bash
 Plays back the compressed RGB camera stream and draws the robot's odometry path:
 
 ```bash
-ros2 run av_bag_viewer bag_viewer /path/to/bag_folder
+ros2 run av_bag_viewer av_bag_viewer /path/to/bag_folder
 ```
 
 Example:
 ```bash
-ros2 run av_bag_viewer bag_viewer ~/Desktop/rosbag2_2026_03_24-13_11_16
+ros2 run av_bag_viewer av_bag_viewer ~/Desktop/rosbag2_2026_03_24-13_11_16
 ```
+
+![av_bag_viewer screenshot](docs/bag_viewer.png)
 
 ### 3D depth point cloud viewer
 
@@ -144,6 +146,8 @@ Example:
 ```bash
 ros2 run av_bag_viewer depth_viewer ~/Desktop/rosbag2_2026_03_24-14_08_28
 ```
+
+![depth_viewer screenshot](docs/depth_viewer.png)
 
 Controls in the depth viewer:
 | Action | Control |

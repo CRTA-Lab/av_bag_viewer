@@ -22,7 +22,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'av_bag_viewer = av_bag_viewer.av_bag_viewer:main',
+            'av_bag_viewer = av_bag_viewer.bag_viewer:main',
             'depth_viewer = av_bag_viewer.depth_viewer:main',
         ],
     },
