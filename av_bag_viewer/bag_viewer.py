@@ -347,17 +347,17 @@ def main(args=None):
         bag_path = sys.argv[1]
 
     print(f'Loading bag: {bag_path}')
-    rclpy.init(args=args)
+    #rclpy.init(args=args)
 
     try:
         messages = load_bag(bag_path)
     except Exception as exc:
         print(f'Error loading bag: {exc}')
-        rclpy.shutdown()
+        #rclpy.shutdown()
         return
 
     print(f'Loaded {len(messages)} messages.')
-    rclpy.shutdown()  # done with ROS — release before entering Tkinter mainloop
+    #rclpy.shutdown()  # done with ROS — release before entering Tkinter mainloop
 
     root = tk.Tk()
     app = BagViewerApp(root, messages)  # noqa: F841

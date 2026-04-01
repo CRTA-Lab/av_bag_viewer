@@ -373,14 +373,14 @@ def main(args=None):
         bag_path = sys.argv[1]
 
     print(f'Loading bag: {bag_path}')
-    rclpy.init(args=args)
+    #rclpy.init(args=args)
     try:
         frames = load_frames(bag_path)
     except Exception as exc:
         print(f'Error: {exc}')
-        rclpy.shutdown()
+        #rclpy.shutdown()
         return
-    rclpy.shutdown()
+    #rclpy.shutdown()
 
     app = QApplication(sys.argv)
     app.setStyle('Fusion')
